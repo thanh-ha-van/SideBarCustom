@@ -2,7 +2,7 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
@@ -10,13 +10,42 @@
         tools:context=".MainActivity">
 
     <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:text="Hello World!"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:layout_margin="10dp"
             android:textColor="@color/white"
             android:background="@drawable/shape_rectangle"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Hello World!"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/gray_50"
+            android:hint="@string/app_name"
+            android:textColor="@color/gray_50"
+            android:background="@drawable/shape_rectangle_blue_border"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Hello World!"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/gray_50"
+            android:hint="@string/app_name"
+            android:textColor="@color/gray_50"
+            android:background="@drawable/shape_rectangle_blue_border"/>
 
 </LinearLayout>

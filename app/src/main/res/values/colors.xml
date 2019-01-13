@@ -17,15 +17,39 @@
     <color name="green">#4CAF50</color>
 
     <!--orange-->
+    <color name="transparent">#00ffffff</color>
+
+    <!--blue-->
+    <color name="blue_30">#4FC3F7</color>
+    <color name="blue_90">#01579B</color>
+
+    <!--blue-->
+    <color name="violet_30">#9e6d9d</color>
+    <color name="violet_50">#7e3c7c</color>
+    <color name="violet_90">#4b0949</color>
+
+    <!--green-->
+    <color name="green_30">#81C784</color>
+    <color name="green_50">#4CAF50</color>
+    <color name="green_70">#388E3C</color>
+
+    <!--orange-->
+    <color name="orange_50">#FF9800</color>
+    <color name="orange_70">#F57C00</color>
 
     <!--yellow-->
+    <color name="yellow_50">#FFEB3B</color>
+    <color name="yellow_70">#FBC02D</color>
 
     <!--red-->
+    <color name="red_30">#f54734</color>
+    <color name="red_50">#f31a02</color>
 
     <!--red-->
+    <color name="pink_50">#fe5394</color>
+    <color name="pink_70">#fe297a</color>
 
     <!--gray-->
-
-    <!--black-->
-
+    <color name="gray_20">#d8d8d8</color>
+    <color name="gray_50">#8c8c8c</color>
 </resources>
