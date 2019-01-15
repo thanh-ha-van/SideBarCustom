@@ -1,0 +1,24 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="@string/app_name"
+            android:background="@null"
+            android:inputType="textNoSuggestions"
+            android:padding="8dp">
+    </EditText>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/editText"
+            android:layout_alignRight="@id/editText"
+            android:layout_alignTop="@id/editText"/>
+</RelativeLayout>

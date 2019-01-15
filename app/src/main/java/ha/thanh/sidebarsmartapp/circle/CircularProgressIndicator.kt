@@ -1,4 +1,4 @@
-package ha.thanh.sidebarsmartapp
+package ha.thanh.sidebarsmartapp.circle
 
 import android.animation.Animator
 import android.animation.PropertyValuesHolder
@@ -16,6 +16,7 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
+import ha.thanh.sidebarsmartapp.R
 
 
 class CircularProgressIndicator : View {
@@ -25,7 +26,8 @@ class CircularProgressIndicator : View {
     private var progressBackgroundPaint: Paint? = null
     private var dotPaint: Paint? = null
 
-    private var startAngle = DEFAULT_PROGRESS_START_ANGLE
+    private var startAngle =
+        DEFAULT_PROGRESS_START_ANGLE
     private var sweepAngle = 0
 
     private var circleBounds: RectF? = null
@@ -40,7 +42,8 @@ class CircularProgressIndicator : View {
 
     private var isFillBackgroundEnabled: Boolean = false
 
-    private var direction = DIRECTION_COUNTERCLOCKWISE
+    private var direction =
+        DIRECTION_COUNTERCLOCKWISE
 
     private var progressAnimator: ValueAnimator? = null
 
@@ -123,7 +126,9 @@ class CircularProgressIndicator : View {
         var progressStrokeCap: Paint.Cap = Paint.Cap.ROUND
 
         if (attrs != null) {
-            val a = context.obtainStyledAttributes(attrs, R.styleable.CircularProgressIndicator)
+            val a = context.obtainStyledAttributes(attrs,
+                R.styleable.CircularProgressIndicator
+            )
 
             progressColor = a.getColor(R.styleable.CircularProgressIndicator_progressColor, progressColor)
             progressBackgroundColor =
@@ -138,17 +143,27 @@ class CircularProgressIndicator : View {
             )
 
 
-            startAngle = a.getInt(R.styleable.CircularProgressIndicator_startAngle, DEFAULT_PROGRESS_START_ANGLE)
+            startAngle = a.getInt(
+                R.styleable.CircularProgressIndicator_startAngle,
+                DEFAULT_PROGRESS_START_ANGLE
+            )
             if (startAngle < 0 || startAngle > 360) {
-                startAngle = DEFAULT_PROGRESS_START_ANGLE
+                startAngle =
+                        DEFAULT_PROGRESS_START_ANGLE
             }
 
             isAnimationEnabled = a.getBoolean(R.styleable.CircularProgressIndicator_enableProgressAnimation, true)
             isFillBackgroundEnabled = a.getBoolean(R.styleable.CircularProgressIndicator_fillBackground, false)
 
-            direction = a.getInt(R.styleable.CircularProgressIndicator_direction, DIRECTION_COUNTERCLOCKWISE)
+            direction = a.getInt(
+                R.styleable.CircularProgressIndicator_direction,
+                DIRECTION_COUNTERCLOCKWISE
+            )
 
-            val cap = a.getInt(R.styleable.CircularProgressIndicator_progressCap, CAP_ROUND)
+            val cap = a.getInt(
+                R.styleable.CircularProgressIndicator_progressCap,
+                CAP_ROUND
+            )
             progressStrokeCap = if (cap == CAP_ROUND) Paint.Cap.ROUND else Paint.Cap.BUTT
 
             a.recycle()

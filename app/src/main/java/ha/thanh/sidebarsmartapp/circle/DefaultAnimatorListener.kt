@@ -1,4 +1,4 @@
-package ha.thanh.sidebarsmartapp
+package ha.thanh.sidebarsmartapp.circle
 
 import android.animation.Animator
 

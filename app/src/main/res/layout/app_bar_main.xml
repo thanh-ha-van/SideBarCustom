@@ -16,6 +16,7 @@
             android:padding="15dp"
             android:background="@drawable/ic_back"/>
 
-    <include layout="@layout/content_main"/>
+    <include layout="@layout/content_main"
+    />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import ha.thanh.sidebarsmartapp.prgrs.MorphingButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -56,8 +57,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.addDrawerListener(actionBarDrawerToggle)
         val timeCountInMilliSeconds = 1 * 10 * 1000L
         circular_progress.maxProgress = 1 * 10 * 1000.0
-        circular_progress.currentProgress(500.0)
-
         object : CountDownTimer(timeCountInMilliSeconds, 10) {
 
             override fun onTick(p0: Long) {
