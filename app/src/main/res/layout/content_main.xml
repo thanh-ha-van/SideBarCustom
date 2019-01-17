@@ -89,6 +89,11 @@
                 app:shadowRadius="30dp"
                 app:shadowYOffset="30"/>
 
+        <ha.thanh.sidebarsmartapp.prgrs.CustomPinInput
+                android:layout_width="match_parent"
+                app:hintText="GG"
+                app:hintTextColor="@color/red_50"
+                android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </ScrollView>
