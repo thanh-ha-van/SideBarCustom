@@ -12,4 +12,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="ThumbIconStyle" parent="AppTheme">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">@dimen/button_size_10</item>
+        <item name="android:layout_height">@dimen/button_size_10</item>
+        <item name="android:layout_margin">@dimen/padding_6</item>
+        <item name="android:checked">false</item>
+    </style>
 </resources>
