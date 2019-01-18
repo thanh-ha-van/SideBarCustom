@@ -19,4 +19,8 @@
         <item name="android:layout_margin">@dimen/padding_4</item>
         <item name="android:checked">false</item>
     </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/orange_50</item> <!-- Whatever color you want-->
+    </style>
 </resources>
