@@ -65,5 +65,6 @@
         <attr format="string" name="input_labor"/>
         <attr format="string" name="input_hint_message"/>
         <attr format="dimension" name="labor_padding_bottom"/>
+        <attr format="integer" name="visible_status"/>
     </declare-styleable>
 </resources>

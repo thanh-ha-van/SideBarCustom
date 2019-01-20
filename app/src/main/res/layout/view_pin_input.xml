@@ -43,6 +43,7 @@
             app:layout_constraintTop_toTopOf="@id/tvInputField"/>
 
     <ProgressBar android:layout_width="20dp"
+                 android:id="@+id/progressBar"
                  app:layout_constraintEnd_toEndOf="@+id/tvInputField"
                  android:layout_marginEnd="13dp"
                  android:theme="@style/AppTheme.WhiteAccent"
