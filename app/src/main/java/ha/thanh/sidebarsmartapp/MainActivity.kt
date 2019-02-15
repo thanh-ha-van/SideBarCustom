@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.support.design.widget.NavigationView
 import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
@@ -15,7 +14,6 @@ import android.view.MenuItem
 import android.view.View
 import ha.thanh.KeyBoardActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 
@@ -56,19 +54,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.setScrimColor(Color.TRANSPARENT)
         drawer_layout.drawerElevation = 0f
         drawer_layout.addDrawerListener(actionBarDrawerToggle)
-        val timeCountInMilliSeconds = 1 * 10 * 1000L
-        circular_progress.maxProgress = 1 * 10 * 1000.0
-        object : CountDownTimer(timeCountInMilliSeconds, 10) {
-
-            override fun onTick(p0: Long) {
-
-                circular_progress.currentProgress((timeCountInMilliSeconds - p0).toDouble())
-            }
-
-            override fun onFinish() {
-
-            }
-        }.start()
 
     }
 
@@ -83,6 +68,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main, menu)
         return true
+    }
+
+    fun ViHuong() {
+        val xinh = true
+        val cute = true
+        val hienlanh = false
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

@@ -17,8 +17,6 @@ class UserNameInputView @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) :
     ConstraintLayout(context, attrs, defStyleAttr), UserNameInput {
-    private val showAnimation = AnimationUtils.loadAnimation(context, R.anim.icon_show)
-    private val hideAnimation = AnimationUtils.loadAnimation(context, R.anim.icon_hide)
 
     init {
         init(attrs)
@@ -79,8 +77,7 @@ class UserNameInputView @JvmOverloads constructor(
 
     private fun hideProgressAndShowSuccess() {
         progressBar.visibility = View.VISIBLE
-        progressBar.startAnimation(hideAnimation).also { onAnimationEnd() }
-    }
+      }
 
     private fun hideProgressAndShowError() {
         progressBar.animate()

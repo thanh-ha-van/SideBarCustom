@@ -7,16 +7,6 @@
         android:background="@color/white"
         tools:context=".MainActivity">
 
-    <Button
-            android:id="@+id/button"
-            android:contentDescription="@string/app_name"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/ic_back"/>
-
-    <include layout="@layout/content_main"
-    />
+    <include layout="@layout/content_main"/>
 
 </android.support.design.widget.CoordinatorLayout>
