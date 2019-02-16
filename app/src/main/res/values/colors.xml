@@ -20,6 +20,7 @@
     <color name="transparent">#00ffffff</color>
 
     <!--blue-->
+    <color name="blue_10">#bae2fa</color>
     <color name="blue_30">#4FC3F7</color>
     <color name="blue_90">#01579B</color>
 

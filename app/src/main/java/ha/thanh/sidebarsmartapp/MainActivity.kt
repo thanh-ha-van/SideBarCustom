@@ -45,9 +45,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 content_view.scaleX = m
                 content_view.scaleY = m
                 val shape = GradientDrawable()
+                val shape2 = GradientDrawable()
                 shape.setColor(ContextCompat.getColor(content_view.context, R.color.white))
                 shape.cornerRadius = slideOffset * 30
+                shape2.setColor(ContextCompat.getColor(content_view.context, R.color.blue_10))
+                shape2.cornerRadius = slideOffset * 30
                 content_view.background = shape
+                topPanel.background = shape2
             }
 
         }
