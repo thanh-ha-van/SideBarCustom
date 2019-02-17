@@ -18,7 +18,7 @@
 
         <ImageView android:layout_width="52dp"
                    android:layout_height="52dp"
-                   android:padding="10dp"
+                   android:padding="8dp"
                    android:background="@drawable/shape_menu_background"
                    android:src="@drawable/ic_group_6"/>
 
@@ -35,12 +35,12 @@
 
         <ImageView android:layout_width="52dp"
                    android:layout_height="52dp"
-                   android:padding="10dp"
+                   android:padding="8dp"
                    android:background="@drawable/shape_menu_background"
                    android:src="@drawable/ic_group_8"/>
 
         <TextView android:layout_width="wrap_content"
-                  android:text="Transfer"
+                  android:text="Pembayaran"
                   android:layout_height="wrap_content"/>
 
     </LinearLayout>
@@ -52,13 +52,13 @@
 
         <ImageView android:layout_width="52dp"
                    android:layout_height="52dp"
-                   android:padding="10dp"
-                   android:paddingEnd="6dp"
+                   android:padding="8dp"
+                   android:paddingEnd="2dp"
                    android:background="@drawable/shape_menu_background"
                    android:src="@drawable/ic_group_19"/>
 
         <TextView android:layout_width="wrap_content"
-                  android:text="Transfer"
+                  android:text="Beli Pulsa"
                   android:layout_height="wrap_content"/>
 
     </LinearLayout>
@@ -70,12 +70,12 @@
 
         <ImageView android:layout_width="52dp"
                    android:layout_height="52dp"
-                   android:padding="10dp"
+                   android:padding="8dp"
                    android:background="@drawable/shape_menu_background"
                    android:src="@drawable/ic_pictogram_cards_64"/>
 
         <TextView android:layout_width="wrap_content"
-                  android:text="Transfer"
+                  android:text="Kartu Saya"
                   android:layout_height="wrap_content"/>
 
     </LinearLayout>

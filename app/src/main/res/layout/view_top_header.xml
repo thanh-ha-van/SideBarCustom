@@ -1,0 +1,87 @@
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <View android:layout_width="match_parent"
+          android:background="@color/blue_10"
+          android:id="@+id/topPanel"
+          android:layout_height="30dp">
+    </View>
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_marginTop="20dp"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/shape_bend"
+               android:id="@+id/background"
+               android:layout_height="175dp"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_marginStart="28dp"
+               android:layout_marginBottom="4dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintBottom_toBottomOf="@id/background"
+               android:src="@drawable/ic_group_557"
+               android:layout_height="148dp"/>
+    <ImageView
+            android:id="@+id/button"
+            android:contentDescription="@string/app_name"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="@id/tv_message"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_group_4"/>
+
+    <TextView android:layout_width="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/button"
+              android:id="@+id/tv_message"
+              android:text="Selamat pagi, Cinta!"
+              android:layout_marginTop="20dp"
+              android:textStyle="bold"
+              app:layout_constraintTop_toTopOf="@id/topPanel"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:layout_height="20dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/tv_question"
+              android:gravity="center"
+              app:layout_constraintTop_toBottomOf="@id/tv_message"
+              app:layout_constraintStart_toEndOf="@id/button"
+              android:text="Apa yang bisa kami bantu hari ini?"
+              android:textSize="14sp"
+              android:layout_height="20dp"/>
+
+    <ImageView android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:id="@+id/bag"
+               android:layout_marginTop="70dp"
+               android:src="@drawable/group_10"
+               android:layout_marginRight="30dp"
+               app:layout_constraintBottom_toTopOf="@id/points"
+               app:layout_constraintEnd_toEndOf="@id/background"/>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:id="@+id/points"
+                  android:layout_marginBottom="26dp"
+                  app:layout_constraintBottom_toBottomOf="@id/background"
+                  app:layout_constraintStart_toStartOf="@id/bag"
+                  app:layout_constraintEnd_toEndOf="@id/bag"
+                  android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:id="@+id/trophy"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_trophy_2"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2,768 points"
+                  android:textSize="11sp"
+                  android:layout_marginStart="3dp"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0288D1</color>
-    <color name="colorPrimaryDark">#0288D1</color>
-    <color name="colorAccent">#4FC3F7</color>
+    <color name="colorPrimary">#d2ecfc</color>
+    <color name="colorPrimaryDark">#d2ecfc</color>
+    <color name="colorAccent">#d2ecfc</color>
 
     <color name="white">#ffffff</color>
     <color name="white_100">#ffffff</color>
@@ -20,7 +20,7 @@
     <color name="transparent">#00ffffff</color>
 
     <!--blue-->
-    <color name="blue_10">#bae2fa</color>
+    <color name="blue_10">#d2ecfc</color>
     <color name="blue_30">#4FC3F7</color>
     <color name="blue_90">#01579B</color>
 

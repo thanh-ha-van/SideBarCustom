@@ -1,6 +1,5 @@
 package ha.thanh.sidebarsmartapp
 
-import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -12,9 +11,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import ha.thanh.KeyBoardActivity
+import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.view_top_header.*
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -24,6 +23,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         nav_view.setNavigationItemSelectedListener(this)
         button.setOnClickListener {
             drawer_layout.openDrawer(GravityCompat.START)
@@ -52,6 +53,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 shape2.cornerRadius = slideOffset * 30
                 content_view.background = shape
                 topPanel.background = shape2
+                content_view.translationZ = 10f
+                drawer_layout.setBackgroundColor(ContextCompat.getColor(drawerView.context, R.color.blue_10))
             }
 
         }
@@ -59,6 +62,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.drawerElevation = 0f
         drawer_layout.addDrawerListener(actionBarDrawerToggle)
 
+        val windows = this.window
+        windows.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        windows.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        windows.statusBarColor = ContextCompat.getColor(this, R.color.blue_10)
     }
 
     override fun onBackPressed() {
@@ -74,27 +81,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return true
     }
 
-    fun ViHuong() {
-        val xinh = true
-        val cute = true
-        val hienlanh = false
-    }
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         item.isChecked = true
         when (item.itemId) {
-            R.id.nav_camera -> {
-                startActivity(Intent(this, KeyBoardActivity::class.java))
-            }
-            R.id.nav_gallery -> {
-
-            }
-            R.id.nav_slideshow -> {
-
-            }
-            R.id.nav_manage -> {
-
-            }
         }
         drawer_layout.closeDrawer(GravityCompat.START)
         return true

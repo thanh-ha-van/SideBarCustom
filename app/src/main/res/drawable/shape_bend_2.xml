@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -22,8 +21,8 @@
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -39,8 +38,8 @@
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -56,8 +55,8 @@
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -70,12 +69,11 @@
         </shape>
     </item>
 
-
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -90,8 +88,8 @@
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -107,8 +105,8 @@
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
             <padding
                     android:bottom="1dp"
@@ -121,15 +119,15 @@
         </shape>
     </item>
 
-
     <item
             android:bottom="0dp"
             android:left="-180dp"
-            android:top="-500dp"
-            android:right="-60dp">
+            android:top="-800dp"
+            android:right="-90dp">
         <shape android:shape="oval">
-            <solid android:color="#d2ecfc"/>
+            <solid android:color="#bae2fa"/>
         </shape>
     </item>
+
 
 </layer-list>
