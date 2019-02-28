@@ -67,4 +67,11 @@
         <attr format="dimension" name="labor_padding_bottom"/>
         <attr format="integer" name="visible_status"/>
     </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="color" name="frontColor"/>
+        <attr format="color" name="backColor"/>
+        <attr format="float" name="strokePercent"/>
+    </declare-styleable>
 </resources>

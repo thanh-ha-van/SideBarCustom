@@ -1,0 +1,37 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:shimmer="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+    <ImageView android:layout_width="30dp"
+               android:src="@drawable/shape_circle_place_holder"
+               android:id="@+id/cardIcon"
+               android:layout_marginStart="50dp"
+               android:layout_marginEnd="22dp"
+               shimmer:layout_constraintTop_toTopOf="parent"
+               android:layout_height="30dp"/>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="115dp"
+                   android:id="@+id/cardLabel"
+                   android:textStyle="bold"
+                   shimmer:layout_constraintTop_toTopOf="parent"
+                   android:src="@drawable/shape_rectangle_place_holder"
+                   android:layout_height="14dp"/>
+
+        <ImageView android:layout_width="145dp"
+                   android:src="@drawable/shape_rectangle_place_holder"
+                   android:id="@+id/cardNumber"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>

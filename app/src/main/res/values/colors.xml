@@ -13,6 +13,7 @@
     <color name="blue">#03A9F4</color>
 
     <!--blue-->
+    <color name="background">#dddddd</color>
 
     <!--green-->
     <color name="green">#4CAF50</color>

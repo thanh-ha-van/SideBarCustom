@@ -6,7 +6,6 @@ import android.content.Context
 import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
 import android.view.View
-import android.view.animation.AnimationUtils
 import ha.thanh.sidebarsmartapp.R
 import kotlinx.android.synthetic.main.view_pin_input.view.*
 
@@ -77,7 +76,7 @@ class UserNameInputView @JvmOverloads constructor(
 
     private fun hideProgressAndShowSuccess() {
         progressBar.visibility = View.VISIBLE
-      }
+    }
 
     private fun hideProgressAndShowError() {
         progressBar.animate()
