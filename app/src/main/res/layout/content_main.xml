@@ -1,170 +1,234 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:shimmer="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/data_view" android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
 
-    <com.facebook.shimmer.ShimmerFrameLayout
-            android:id="@+id/shimmer_view_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            shimmer:shimmer_duration="1800"
-            android:orientation="vertical">
+        <ImageView android:layout_width="match_parent"
+                   android:id="@+id/topBackground"
+                   android:background="@drawable/bitmap"
+                   android:layout_height="200dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView android:layout_width="150dp"
+                   android:background="@drawable/shape_profile_background"
+                   app:layout_constraintBottom_toBottomOf="@id/topBackground"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_height="150dp"
+                   android:src="@drawable/ic_user_image"
+                   android:padding="8dp"
+                   android:layout_marginStart="28dp"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="28sp"
+                  android:id="@+id/userName"
+                  android:layout_marginStart="36dp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/topBackground"
+                  android:layout_marginEnd="36dp"
+                  android:textStyle="bold"
+                  android:paddingBottom="10dp"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/black_20"
+                  android:text="Cinta Alexander Simangunsong"/>
+
         <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <include layout="@layout/place_holder"/>
-            <include layout="@layout/place_holder"/>
-            <include layout="@layout/place_holder"/>
+                style="@style/ProfileItem"
+                android:id="@+id/cardInfo"
+                app:layout_constraintTop_toBottomOf="@id/userName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView android:layout_width="30dp"
+                       android:src="@drawable/ic_credit_card"
+                       android:id="@+id/cardIcon"
+                       android:padding="5dp"
+                       android:tint="@color/blue"
+                       android:layout_marginStart="36dp"
+                       android:layout_marginEnd="36dp"
+                       android:layout_height="30dp"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/cardLabel"
+                        style="@style/ProfileItemLabel"
+                        android:text="Nomor Rekening Saya"/>
+
+                <TextView style="@style/ProfileItemValue"
+                          android:id="@+id/cardNumber"
+                          android:textSize="18sp"
+                          android:text="100000145323"/>
+
+                <View android:layout_width="match_parent"
+                      android:background="@color/green_30"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                style="@style/ProfileItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardInfo"
+                android:id="@+id/userInfo">
+
+            <ImageView android:layout_width="30dp"
+                       android:src="@drawable/ic_user"
+                       android:id="@+id/userIcon"
+                       android:padding="5dp"
+                       android:tint="#8142a6"
+                       android:layout_marginStart="36dp"
+                       android:layout_marginEnd="36dp"
+                       android:layout_height="30dp"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/userLabel"
+                        style="@style/ProfileItemLabel"
+                        android:text="Username"
+                />
+
+                <TextView style="@style/ProfileItemValue"
+                          android:id="@+id/userNumber"
+                          android:text="cinta_oye"
+                />
+
+                <View android:layout_width="match_parent"
+                      android:background="@color/green_30"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                style="@style/ProfileItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userInfo"
+                android:id="@+id/phoneInfo">
+
+            <ImageView android:layout_width="30dp"
+                       android:src="@drawable/ic_smartphone"
+                       android:id="@+id/phoneIcon"
+                       android:padding="5dp"
+                       android:tint="@color/orange_70"
+                       android:layout_marginStart="36dp"
+                       android:layout_marginEnd="36dp"
+                       android:layout_height="30dp"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView style="@style/ProfileItemLabel"
+                          android:id="@+id/phoneLabel"
+                          android:text="Nomor HP"
+                />
+
+                <TextView
+                        android:id="@+id/phoneNumber"
+                        style="@style/ProfileItemValue"
+                        android:text="081234567890"
+                />
+
+                <View android:layout_width="match_parent"
+                      android:background="@color/green_30"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                style="@style/ProfileItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneInfo"
+                android:id="@+id/emailInfo">
+
+            <ImageView android:layout_width="30dp"
+                       android:src="@drawable/ic_email"
+                       android:id="@+id/emailIcon"
+                       android:padding="5dp"
+                       android:tint="#3fb0a0"
+                       android:layout_marginStart="36dp"
+                       android:layout_marginEnd="36dp"
+                       android:layout_height="30dp"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/emailLabel"
+                        style="@style/ProfileItemLabel"
+                        android:text="Email"
+                />
+
+                <TextView style="@style/ProfileItemValue"
+                          android:id="@+id/emailValue"
+                          android:text="cinta.oye@email.com"/>
+
+                <View android:layout_width="match_parent"
+                      android:background="@color/green_30"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                style="@style/ProfileItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailInfo"
+                android:id="@+id/addressInfo">
+
+            <ImageView android:layout_width="30dp"
+                       android:src="@drawable/ic_home"
+                       android:id="@+id/addressIcon"
+                       android:padding="5dp"
+                       android:tint="#5e6e92"
+                       android:layout_marginStart="36dp"
+                       android:layout_marginEnd="36dp"
+                       android:layout_height="30dp"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                <TextView style="@style/ProfileItemLabel"
+                          android:id="@+id/addressLabel"
+                          android:text="Alamat Domisili"
+                />
+
+                <TextView
+                        android:id="@+id/addressValue"
+                        style="@style/ProfileItemValue"
+                        android:text="Jl Jenderal Sudirman Kav 28, South Jakarta, Jakarta 11920"
+                />
+
+                <View android:layout_width="match_parent"
+                      android:background="@color/green_30"
+                      android:layout_marginTop="10dp"
+                      android:layout_height="1px"/>
+            </LinearLayout>
         </LinearLayout>
 
-    </com.facebook.shimmer.ShimmerFrameLayout>
+    </android.support.constraint.ConstraintLayout>
 
-    <ScrollView android:layout_width="match_parent"
-                android:id="@+id/data_view"
-                android:layout_height="wrap_content">
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-            <ImageView android:layout_width="match_parent"
-                       android:background="@drawable/bitmap"
-                       android:layout_height="224dp"/>
-            <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:shimmer="http://schemas.android.com/tools"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="10dp"
-                    android:layout_height="wrap_content">
-
-                <ImageView android:layout_width="30dp"
-                           android:src="@drawable/ic_email"
-                           android:id="@+id/cardIcon"
-                           android:layout_marginStart="50dp"
-                           android:layout_marginEnd="22dp"
-                           shimmer:layout_constraintTop_toTopOf="parent"
-                           android:layout_height="30dp"/>
-
-                <LinearLayout android:layout_width="0dp"
-                              android:layout_weight="1"
-                              android:orientation="vertical"
-                              android:layout_height="wrap_content">
-
-                    <TextView android:layout_width="wrap_content"
-                              android:id="@+id/cardLabel"
-                              android:textStyle="bold"
-                              android:textSize="14sp"
-                              android:includeFontPadding="false"
-                              android:text="Your card bla bla"
-                              shimmer:layout_constraintTop_toTopOf="parent"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:layout_height="14dp"/>
-
-                    <TextView android:layout_width="wrap_content"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:id="@+id/cardNumber"
-                              android:textSize="18sp"
-                              android:includeFontPadding="false"
-                              android:text="235234647235"
-                              android:layout_marginTop="5dp"
-                              android:layout_height="18dp"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:shimmer="http://schemas.android.com/tools"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="10dp"
-                    android:layout_height="wrap_content">
-
-                <ImageView android:layout_width="30dp"
-                           android:src="@drawable/ic_email"
-                           android:id="@+id/cardIcon"
-                           android:layout_marginStart="50dp"
-                           android:layout_marginEnd="22dp"
-                           shimmer:layout_constraintTop_toTopOf="parent"
-                           android:layout_height="30dp"/>
-
-                <LinearLayout android:layout_width="0dp"
-                              android:layout_weight="1"
-                              android:orientation="vertical"
-                              android:layout_height="wrap_content">
-
-                    <TextView android:layout_width="wrap_content"
-                              android:id="@+id/cardLabel"
-                              android:textStyle="bold"
-                              android:textSize="14sp"
-                              android:includeFontPadding="false"
-                              android:text="Your card bla bla"
-                              shimmer:layout_constraintTop_toTopOf="parent"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:layout_height="14dp"/>
-
-                    <TextView android:layout_width="wrap_content"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:id="@+id/cardNumber"
-                              android:textSize="18sp"
-                              android:includeFontPadding="false"
-                              android:text="235234647235"
-                              android:layout_marginTop="5dp"
-                              android:layout_height="18dp"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:shimmer="http://schemas.android.com/tools"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="10dp"
-                    android:layout_height="wrap_content">
-
-                <ImageView android:layout_width="30dp"
-                           android:src="@drawable/ic_email"
-                           android:id="@+id/cardIcon"
-                           android:layout_marginStart="50dp"
-                           android:layout_marginEnd="22dp"
-                           shimmer:layout_constraintTop_toTopOf="parent"
-                           android:layout_height="30dp"/>
-
-                <LinearLayout android:layout_width="0dp"
-                              android:layout_weight="1"
-                              android:orientation="vertical"
-                              android:layout_height="wrap_content">
-
-                    <TextView android:layout_width="wrap_content"
-                              android:id="@+id/cardLabel"
-                              android:textStyle="bold"
-                              android:textSize="14sp"
-                              android:includeFontPadding="false"
-                              android:text="Your card bla bla"
-                              shimmer:layout_constraintTop_toTopOf="parent"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:layout_height="14dp"/>
-
-                    <TextView android:layout_width="wrap_content"
-                              android:src="@drawable/shape_rectangle_place_holder"
-                              android:id="@+id/cardNumber"
-                              android:textSize="18sp"
-                              android:includeFontPadding="false"
-                              android:text="235234647235"
-                              android:layout_marginTop="5dp"
-                              android:layout_height="18dp"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </ScrollView>
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>
