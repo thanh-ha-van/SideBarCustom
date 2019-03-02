@@ -1,6 +1,19 @@
 <LinearLayout
-        android:id="@+id/viewLoading"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewLoading"
         android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
         android:layout_height="match_parent">
+
+    <ha.thanh.sidebarsmartapp.CircleLoading
+            android:id="@+id/pw_spinner"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:circleColor="@color/blue_50"
+            app:circleBarLength="72"
+            app:circleSpeed="3000"
+            app:circleBarColor="@color/orange_70"
+            app:circleWidth="5dp"/>
 </LinearLayout>
