@@ -3,6 +3,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:id="@+id/data_view" android:layout_height="wrap_content">
+
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -16,14 +17,24 @@
                    app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"/>
 
-        <ImageView android:layout_width="150dp"
-                   android:background="@drawable/shape_profile_background"
-                   app:layout_constraintBottom_toBottomOf="@id/topBackground"
-                   app:layout_constraintStart_toStartOf="parent"
-                   android:layout_height="150dp"
-                   android:src="@drawable/ic_user_image"
-                   android:padding="8dp"
-                   android:layout_marginStart="28dp"/>
+        <View
+                android:layout_width="150dp"
+                android:id="@+id/profileBackground"
+                app:layout_constraintBottom_toBottomOf="@id/topBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="150dp"
+                android:background="@drawable/shape_profile_background"
+                android:layout_marginStart="28dp"/>
+
+        <ha.thanh.sidebarsmartapp.circle.CircleImageView
+                android:layout_width="130dp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="@id/profileBackground"
+                app:layout_constraintStart_toStartOf="@id/profileBackground"
+                app:layout_constraintEnd_toEndOf="@id/profileBackground"
+                app:layout_constraintTop_toTopOf="@id/profileBackground"
+                android:layout_height="130dp"/>
+
 
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
