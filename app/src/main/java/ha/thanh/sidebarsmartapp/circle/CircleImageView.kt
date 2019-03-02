@@ -24,7 +24,7 @@ class CircleImageView : AppCompatImageView {
         val b = (drawable as BitmapDrawable).bitmap
         val bitmap = b.copy(Bitmap.Config.ARGB_8888, true)
 
-        val w = width/*, h = getHeight( )*/
+        val w = width
 
         val roundBitmap = getCroppedBitmap(bitmap, w)
         canvas.drawBitmap(roundBitmap, 0f, 0f, null)
@@ -57,8 +57,7 @@ class CircleImageView : AppCompatImageView {
         canvas.drawARGB(0, 0, 0, 0)
         paint.color = Color.parseColor("#BAB399")
         canvas.drawCircle(
-            radius / 2 + 0.7f,
-            radius / 2 + 0.7f, radius / 2 + 0.1f, paint
+            radius / 2f, radius / 2f, radius / 2f, paint
         )
         paint.xfermode = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)
         canvas.drawBitmap(bitmap, rect, rect, paint)
