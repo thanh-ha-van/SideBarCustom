@@ -91,4 +91,6 @@
 
     <include layout="@layout/content_main"/>
 
+    <include layout="@layout/load_profile_fail"/>
+
 </android.support.constraint.ConstraintLayout>

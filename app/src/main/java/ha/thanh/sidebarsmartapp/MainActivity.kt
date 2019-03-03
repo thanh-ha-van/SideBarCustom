@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         mShimmerViewContainer!!.startShimmer()
 
-        Handler().postDelayed({
-            onStopAni()
-            mShimmerViewContainer?.visibility = View.GONE
-            mContentView?.visibility = View.VISIBLE
-        }, 5000)
+//        Handler().postDelayed({
+//            onStopAni()
+//            mShimmerViewContainer?.visibility = View.GONE
+//            mContentView?.visibility = View.VISIBLE
+//        }, 5000)
 
     }
 
