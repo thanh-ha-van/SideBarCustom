@@ -25,4 +25,13 @@
     <string name="more_pin_des">Ubah kata sandi untuk bertransaksi</string>
     <string name="more_logout">Log Out</string>
     <string name="more_logout_des">Keluar dari aplikasi ini dengan aman</string>
+
+    <!--profile screen-->
+    <string name="profile_my_account">Nomor Rekening Saya</string>
+    <string name="profile_user_name">Username</string>
+    <string name="profile_my_phone">Nomor HP</string>
+    <string name="profile_my_email">Email</string>
+    <string name="profile_my_address">Alamat Domisili</string>
+    <string name="profile_load_fail_mes">Gagal mengambil data Kamu.</string>
+    <string name="profile_load_fail_mes_2">Pastikan kamu terkoneksi ke jaringan internet kemudian coba lagi.</string>
 </resources>

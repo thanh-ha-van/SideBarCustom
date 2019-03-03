@@ -81,7 +81,7 @@
                 <TextView
                         android:id="@+id/cardLabel"
                         style="@style/ProfileItemLabel"
-                        android:text="Nomor Rekening Saya"/>
+                        android:text="@string/profile_my_account"/>
 
                 <TextView
                         style="@style/ProfileItemValue"
@@ -123,7 +123,7 @@
                 <TextView
                         android:id="@+id/userLabel"
                         style="@style/ProfileItemLabel"
-                        android:text="Username"
+                        android:text="@string/profile_user_name"
                         />
 
                 <TextView
@@ -165,7 +165,7 @@
                 <TextView
                         style="@style/ProfileItemLabel"
                         android:id="@+id/phoneLabel"
-                        android:text="Nomor HP"
+                        android:text="@string/profile_my_phone"
                         />
 
                 <TextView
@@ -207,7 +207,7 @@
                 <TextView
                         android:id="@+id/emailLabel"
                         style="@style/ProfileItemLabel"
-                        android:text="Email"
+                        android:text="@string/profile_my_email"
                         />
 
                 <TextView
@@ -249,7 +249,7 @@
                 <TextView
                         style="@style/ProfileItemLabel"
                         android:id="@+id/addressLabel"
-                        android:text="Alamat Domisili"
+                        android:text="@string/profile_my_address"
                         />
 
                 <TextView
