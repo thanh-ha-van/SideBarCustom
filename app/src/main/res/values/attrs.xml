@@ -67,4 +67,20 @@
         <attr format="dimension" name="labor_padding_bottom"/>
         <attr format="integer" name="visible_status"/>
     </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="color" name="frontColor"/>
+        <attr format="color" name="backColor"/>
+        <attr format="float" name="strokePercent"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleLoading">
+        <attr name="circleBarColor" format="color" />
+        <attr name="circleColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleSpeed" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleBarLength" format="integer" />
+    </declare-styleable>
 </resources>

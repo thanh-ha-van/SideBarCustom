@@ -1,0 +1,321 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:text="Hai Cinta, kami siap membantu Kamu!"/>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_help"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_fag"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:text="@string/more_fag_des"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@color/green_30"
+                        android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_security_badge"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_tips"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:text="@string/more_tips_des"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@color/green_30"
+                        android:layout_height="1px"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_phone_call"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_phone"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:text="@string/more_phone_des"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@color/green_30"
+                        android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_glasses"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_term"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:text="@string/more_term_des"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@color/green_30"
+                        android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_privacy"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_disclaim"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:text="@string/more_disclaim_des"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:background="@color/green_30"
+                        android:layout_height="1px"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_info"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_about"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/more_about_des"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#e4e6e8"/>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_key"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_password"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/more_password_des"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_pin_setting"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:text="@string/more_pin"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/more_pin_des"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/MoreMenuItem">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_log_out"
+                    android:padding="4dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_height="30dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        style="@style/MoreMenuItemLabel"
+                        android:textColor="@color/red_50"
+                        android:text="@string/more_logout"/>
+
+                <TextView
+                        style="@style/MoreMenuItemValue"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/more_logout_des"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

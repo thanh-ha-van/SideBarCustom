@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#d2ecfc</color>
-    <color name="colorPrimaryDark">#d2ecfc</color>
-    <color name="colorAccent">#d2ecfc</color>
+    <color name="colorPrimary">#01579B</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#01579B</color>
 
     <color name="white">#ffffff</color>
     <color name="white_100">#ffffff</color>
@@ -10,9 +10,11 @@
     <!--blue-->
     <color name="blue_50">#03A9F4</color>
     <color name="black_20">#231f20</color>
+    <color name="black">#000000</color>
     <color name="blue">#03A9F4</color>
 
     <!--blue-->
+    <color name="background">#dddddd</color>
 
     <!--green-->
     <color name="green">#4CAF50</color>
@@ -31,7 +33,7 @@
     <color name="violet_90">#4b0949</color>
 
     <!--green-->
-    <color name="green_30">#81C784</color>
+    <color name="green_30">#d8d8d8</color>
     <color name="green_50">#4CAF50</color>
     <color name="green_70">#388E3C</color>
 
